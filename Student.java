@@ -2,7 +2,6 @@ public class Student {
 
     private String name;
     private String studentNumber;
-    private Resource resource;
 
     public String getName() {
         return name;
@@ -15,15 +14,5 @@ public class Student {
     }
     public void setStudentNumber(String studentNumber) {
         this.studentNumber = studentNumber;
-    }
-    public Resource getResource() {
-        return resource;
-    }
-
-    public void borrowItem(Resource resource){
-        this.resource = resource;
-        System.out.println("Student " + this.studentNumber + ", " 
-                            + name + ", has borrowed " 
-                            + resource.itemize() + ".");
     }
 }
