@@ -6,6 +6,7 @@ public class TestProgram {
         student.setStudentNumber("21-11402-313");
         
         AudioBook audioBook = new AudioBook();
-        student.borrowItem(audioBook);
+        Borrower borrower = new Borrower(student, audioBook);
+        borrower.borrow();
     }
 }
