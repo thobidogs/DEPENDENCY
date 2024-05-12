@@ -1,7 +1,7 @@
 public class Borrower {
 
-    Student student;
-    Resource resource;
+    private Student student;
+    private Resource resource;
     
     public Borrower(Student student, Resource resource){
         this.student = student;
